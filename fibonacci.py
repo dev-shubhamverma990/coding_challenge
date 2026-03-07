@@ -1,7 +1,13 @@
-def fibonaci(n):
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonaci(n - 1) + fibonaci(n - 2)
+def fibonaci_series(n):
+    a, b = 0, 1
+    count = 0
+    res = []
+    while count < n:
+        # print(a, end=' ')
+        res.append(a)
+        a, b = b, a + b
+        count += 1
+        
+    print(res)
+if __name__ == "__main__":
+    fibonaci_series(10)
