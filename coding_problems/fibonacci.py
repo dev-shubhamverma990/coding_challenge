@@ -7,7 +7,8 @@ def fibonaci_series(n):
         res.append(a)
         a, b = b, a + b
         count += 1
-        
     print(res)
+
+
 if __name__ == "__main__":
     fibonaci_series(10)

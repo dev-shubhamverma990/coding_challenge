@@ -6,6 +6,7 @@ def move_zeros(lst):
     zero_count = lst.count(0)
     return non_zero + [0] * zero_count
 
+
 def _move_zeros(lst):
     non_zero = []
     zero_count = 0
@@ -15,6 +16,7 @@ def _move_zeros(lst):
         else:
             zero_count += 1
     return non_zero + [0] * zero_count
+
 
 if __name__ == "__main__":
     lst = [0, 1, 0, 3, 12]

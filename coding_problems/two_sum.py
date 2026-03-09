@@ -1,17 +1,18 @@
-"""Given an array of integers and a target, 
+"""Given an array of integers and a target,
 return indices of two numbers that add up to the target."""
 
+
 def two_sum(nums, target):
-    """Given an array of integers and a target, 
+    """Given an array of integers and a target,
     return indices of two numbers that add up to the target."""
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
             if nums[i] + nums[j] == target:
                 return [i, j]
-            
+
 
 def _two_sum2(nums, target):
-    """Given an array of integers and a target, 
+    """Given an array of integers and a target,
     return indices of two numbers that add up to the target."""
     num_dict = {}
     for i, num in enumerate(nums):
